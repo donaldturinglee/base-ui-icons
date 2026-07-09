@@ -1,0 +1,50 @@
+{
+  "name": "@gamecrafters/base-ui-icons",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    "./react": {
+      "types": "./lib/react/index.ts",
+      "default": "./lib/react/index.ts"
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build:optimize": "svgo icons --config svgo.config.js",
+    "build:data": "node scripts/build.js generate-data -i \"icons/**/*.svg\" -o build/data.json -k keywords.json",
+    "build:react": "node scripts/build.js generate-icons -i build/data.json -o lib/react",
+    "build": "npm run build:optimize && npm run build:data && npm run build:react"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donaldturinglee/base-ui-icons.git"
+  },
+  "keywords": [],
+  "author": "donaldturinglee <donaldturinglee@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/donaldturinglee/base-ui-icons/issues"
+  },
+  "homepage": "https://github.com/donaldturinglee/base-ui-icons#readme",
+  "dependencies": {
+    "@babel/generator": "^7.28.5",
+    "@babel/types": "^7.28.5",
+    "cheerio": "^1.1.2",
+    "clsx": "^2.1.1",
+    "fs-extra": "^11.3.2",
+    "globby": "^15.0.0",
+    "lodash.merge": "^4.6.2",
+    "svgo": "^4.0.0",
+    "svgson": "^5.3.1",
+    "tailwind-merge": "^3.6.0",
+    "trim-newlines": "^5.0.0",
+    "yargs": "^18.0.0"
+  }
+}
