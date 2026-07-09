@@ -140,3 +140,4 @@ dist
 
 ### Base UI Icons ###
 build/
+lib/data.json

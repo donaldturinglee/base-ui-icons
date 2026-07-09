@@ -230,7 +230,6 @@ function writeIcons(file, icons) {
   const count = icons.length
   const code = `import React from "react";
 import type { IconProps, SVGData } from "./Icon.types";
-import { classNames } from "@/lib/classnames";
 
 function createIconComponent(name: string, defaultClassName: string, getSVGData: () => SVGData) {
     const svgDataByHeight = getSVGData()
@@ -259,7 +258,7 @@ function createIconComponent(name: string, defaultClassName: string, getSVGData:
             const path = svgDataByHeight[naturalHeight].path
             const labelled = ariaLabel || arialabelledby
             const role = labelled ? "img" : undefined
-            const classes = classNames(defaultClassName, className)
+            const classes = \`\${defaultClassName} \${className}\`.trim()
 
             return (
                 <svg
