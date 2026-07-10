@@ -2,29 +2,29 @@
   "name": "@gamecrafters/base-ui-icons",
   "version": "0.0.2",
   "description": "",
-  "main": "./build/react/index.js",
-  "module": "./build/react/index.mjs",
-  "types": "./build/react/index.d.ts",
+  "main": "./lib/react/index.js",
+  "module": "./lib/react/index.mjs",
+  "types": "./lib/react/index.d.ts",
   "exports": {
     "./react": {
       "import": {
-        "types": "./build/react/index.d.mts",
-        "default": "./build/react/index.mjs"
+        "types": "./lib/react/index.d.mts",
+        "default": "./lib/react/index.mjs"
       },
       "require": {
-        "types": "./build/react/index.d.ts",
-        "default": "./build/react/index.js"
+        "types": "./lib/react/index.d.ts",
+        "default": "./lib/react/index.js"
       }
     }
   },
   "sideEffects": false,
   "files": [
-    "build"
+    "lib"
   ],
   "scripts": {
     "build:optimize": "svgo icons --config svgo.config.js",
-    "build:data": "node scripts/build.js generate-data -i \"icons/**/*.svg\" -o lib/data.json -k keywords.json",
-    "build:react": "node scripts/build.js generate-icons -i lib/data.json -o lib/react",
+    "build:data": "node scripts/build.js generate-data -i \"icons/**/*.svg\" -o build/data.json -k keywords.json",
+    "build:react": "node scripts/build.js generate-icons -i build/data.json -o build/react",
     "build:bundle": "rollup --config rollup.config.mjs",
     "build": "npm run build:optimize && npm run build:data && npm run build:react && npm run build:bundle",
     "typecheck": "tsc --noEmit"

@@ -2,8 +2,8 @@ import fs from "node:fs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
-const input = "lib/react/index.ts";
-const outDir = "build";
+const input = "build/react/index.ts";
+const outDir = "lib";
 const external = ["react"];
 
 function clean() {
