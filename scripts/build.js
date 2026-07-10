@@ -382,7 +382,7 @@ async function generateIcons(options) {
 
   const icons = Object.entries(octicons)
     .map(([key, octicon]) => {
-      const name = `${pascalCase(key)}Icon`
+      const name = pascalCase(key)
       
       const svgData = t.objectExpression(
         Object.entries(octicon.heights).map(([height, icon]) => {
