@@ -44,9 +44,6 @@
 
 ## Getting Started
 
-To use the icons, install the published package. To work on the icon set itself,
-clone the repo and run the build pipeline locally.
-
 ### Prerequisites
 
 * Node.js 24 or later
@@ -67,7 +64,7 @@ clone the repo and run the build pipeline locally.
 ## Usage
 
 ```jsx
-import { AddCircleRegular, AlertRegular } from '@gamecrafters/base-ui-icons/react'
+import { AddCircleRegular, AlertRegular } from '@gamecrafters/base-ui-icons'
 
 const Toolbar = () => {
   return (

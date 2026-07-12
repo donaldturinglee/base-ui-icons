@@ -2,7 +2,7 @@ import fs from "node:fs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 
-const input = "build/react/index.ts";
+const input = "build/index.ts";
 const outDir = "lib";
 const external = ["react"];
 
@@ -31,13 +31,13 @@ export default [
     ],
     output: [
       {
-        file: `${outDir}/react/index.js`,
+        file: `${outDir}/index.js`,
         format: "cjs",
         exports: "named",
         interop: "auto"
       },
       {
-        file: `${outDir}/react/index.mjs`,
+        file: `${outDir}/index.mjs`,
         format: "es"
       }
     ]
@@ -48,11 +48,11 @@ export default [
     plugins: [dts()],
     output: [
       {
-        file: `${outDir}/react/index.d.ts`,
+        file: `${outDir}/index.d.ts`,
         format: "es"
       },
       {
-        file: `${outDir}/react/index.d.mts`,
+        file: `${outDir}/index.d.mts`,
         format: "es"
       }
     ]

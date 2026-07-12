@@ -2,18 +2,18 @@
   "name": "@gamecrafters/base-ui-icons",
   "version": "0.0.5",
   "description": "",
-  "main": "./lib/react/index.js",
-  "module": "./lib/react/index.mjs",
-  "types": "./lib/react/index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
   "exports": {
-    "./react": {
+    ".": {
       "import": {
-        "types": "./lib/react/index.d.mts",
-        "default": "./lib/react/index.mjs"
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
       },
       "require": {
-        "types": "./lib/react/index.d.ts",
-        "default": "./lib/react/index.js"
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
       }
     }
   },
@@ -24,9 +24,9 @@
   "scripts": {
     "build:optimize": "svgo icons --config svgo.config.js",
     "build:data": "node scripts/build.js generate-data -i \"icons/**/*.svg\" -o build/data.json -k keywords.json",
-    "build:react": "node scripts/build.js generate-icons -i build/data.json -o build/react",
+    "build:icons": "node scripts/build.js generate-icons -i build/data.json -o build",
     "build:bundle": "rollup --config rollup.config.mjs",
-    "build": "npm run build:optimize && npm run build:data && npm run build:react && npm run build:bundle",
+    "build": "npm run build:optimize && npm run build:data && npm run build:icons && npm run build:bundle",
     "typecheck": "tsc --noEmit"
   },
   "publishConfig": {
