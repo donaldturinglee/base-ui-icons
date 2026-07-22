@@ -188,6 +188,10 @@ function pascalCase(str) {
   return str.replace(/(^|_)([a-z])/g, (_, __, c) => c.toUpperCase())
 }
 
+function kebabCase(str) {
+  return str.replace(/_/g, '-')
+}
+
 /**
  * Convert a given node from an svg AST into a JS AST of JSX Elements
  */
@@ -403,7 +407,7 @@ async function generateIcons(options) {
             t.addComment(
               t.callExpression(t.identifier('createIconComponent'), [
                 t.stringLiteral(name),
-                t.stringLiteral(`icon icon-${key}`),
+                t.stringLiteral(`icon icon-${kebabCase(key)}`),
                 t.arrowFunctionExpression([], t.blockStatement([t.returnStatement(svgData)]))
               ]),
               'leading',
