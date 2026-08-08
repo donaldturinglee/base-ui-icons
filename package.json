@@ -1,7 +1,7 @@
 {
   "name": "@gamecrafters/base-ui-icons",
   "version": "0.0.7",
-  "description": "",
+  "description": "Base UI icons",
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
   "types": "./lib/index.d.ts",
