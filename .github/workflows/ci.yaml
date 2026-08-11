@@ -32,4 +32,4 @@ jobs:
         run: npm run build --if-present
 
       - name: Publish package to npm
-        run: npm publish --provenance --access public
+        run: npm publish --workspace @gamecrafters/base-ui-icons --provenance --access public

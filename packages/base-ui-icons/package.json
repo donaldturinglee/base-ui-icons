@@ -1,0 +1,71 @@
+{
+  "name": "@gamecrafters/base-ui-icons",
+  "version": "0.0.8",
+  "description": "Base UI icons",
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./lib/index.d.mts",
+        "default": "./lib/index.mjs"
+      },
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      }
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build:clean": "node -e \"require('fs').rmSync('build', {recursive: true, force: true})\"",
+    "build:optimize": "svgo -f icons -o build/icons --config svgo.config.js",
+    "build:data": "node scripts/build.js generate-data -i \"build/icons/**/*.svg\" -o build/data.json -k keywords.json",
+    "build:icons": "node scripts/build.js generate-icons -i build/data.json -o build",
+    "build:bundle": "rollup --config rollup.config.mjs",
+    "build": "npm run build:clean && npm run build:optimize && npm run build:data && npm run build:icons && npm run build:bundle",
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donaldturinglee/base-ui-icons.git",
+    "directory": "packages/base-ui-icons"
+  },
+  "keywords": [],
+  "author": "donaldturinglee <donaldturinglee@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/donaldturinglee/base-ui-icons/issues"
+  },
+  "homepage": "https://github.com/donaldturinglee/base-ui-icons#readme",
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@babel/generator": "^7.28.5",
+    "@babel/types": "^7.28.5",
+    "@rollup/plugin-typescript": "^12.3.0",
+    "@types/react": "^19.2.2",
+    "cheerio": "^1.1.2",
+    "fs-extra": "^11.3.2",
+    "globby": "^15.0.0",
+    "lodash.merge": "^4.6.2",
+    "react": "^19.2.0",
+    "rollup": "^4.62.2",
+    "rollup-plugin-dts": "^6.4.1",
+    "svgo": "^4.0.2",
+    "svgson": "^5.3.1",
+    "trim-newlines": "^5.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "^6.0.3",
+    "yargs": "^18.0.0"
+  }
+}
