@@ -2,14 +2,6 @@
 
 
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
-
 <br />
 <div align="center">
   <a href="https://github.com/donaldturinglee/base-ui-icons">
@@ -19,6 +11,12 @@
   <p align="center">
     base-ui-icons are a set of SVG icons built by GameCrafters
   </p>
+
+[![npm][npm-shield]][npm-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Last Commit][last-commit-shield]][last-commit-url]
+[![MIT License][license-shield]][license-url]
+
 </div>
 
 
@@ -29,7 +27,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
@@ -43,12 +40,6 @@
 
 
 ## Getting Started
-
-### Prerequisites
-
-* Node.js 24 or later
-* npm
-* React 18 or later, as a peer dependency of the package
 
 ### Installation
 
@@ -112,20 +103,21 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [https://github.com/donaldturinglee/base-ui-icons](https://github.com/donaldturinglee/base-ui-icons)
+[![LinkedIn](https://go-skill-icons.vercel.app/api/icons?i=linkedin&theme=dark)](https://www.linkedin.com/in/donaldturinglee/) &nbsp;
+[![Discord](https://go-skill-icons.vercel.app/api/icons?i=discord&theme=dark)](https://discord.gg/YsteKRjrSH) &nbsp;
+[![Twitter](https://go-skill-icons.vercel.app/api/icons?i=x&theme=dark)](https://x.com/donaldturinglee) &nbsp;
+[![YouTube](https://go-skill-icons.vercel.app/api/icons?i=youtube&theme=dark)](https://www.youtube.com/channel/UCOHOUOsJjGPBlov7FuwPDbA) &nbsp;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
+[npm-shield]: https://img.shields.io/npm/v/@gamecrafters/base-ui-icons.svg?style=for-the-badge
+[npm-url]: https://www.npmjs.com/package/@gamecrafters/base-ui-icons
 [contributors-shield]: https://img.shields.io/github/contributors/donaldturinglee/base-ui-icons.svg?style=for-the-badge
 [contributors-url]: https://github.com/donaldturinglee/base-ui-icons/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/donaldturinglee/base-ui-icons.svg?style=for-the-badge
-[forks-url]: https://github.com/donaldturinglee/base-ui-icons/network/members
-[stars-shield]: https://img.shields.io/github/stars/donaldturinglee/base-ui-icons.svg?style=for-the-badge
-[stars-url]: https://github.com/donaldturinglee/base-ui-icons/stargazers
-[issues-shield]: https://img.shields.io/github/issues/donaldturinglee/base-ui-icons.svg?style=for-the-badge
-[issues-url]: https://github.com/donaldturinglee/base-ui-icons/issues
+[last-commit-shield]: https://img.shields.io/github/last-commit/donaldturinglee/base-ui-icons.svg?style=for-the-badge
+[last-commit-url]: https://github.com/donaldturinglee/base-ui-icons/commits/main
 [license-shield]: https://img.shields.io/github/license/donaldturinglee/base-ui-icons.svg?style=for-the-badge
 [license-url]: https://github.com/donaldturinglee/base-ui-icons/blob/main/LICENSE
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
