@@ -37,4 +37,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Project Link: [https://github.com/donaldturinglee/base-ui-icons](https://github.com/donaldturinglee/base-ui-icons)
+Project Link: [https://github.com/gamecrafters-io/base-ui-icons](https://github.com/gamecrafters-io/base-ui-icons)

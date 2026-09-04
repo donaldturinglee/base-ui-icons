@@ -35,7 +35,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donaldturinglee/base-ui-icons.git",
+    "url": "git+https://github.com/gamecrafters-io/base-ui-icons.git",
     "directory": "packages/base-ui-icons"
   },
   "keywords": [],
@@ -43,9 +43,9 @@
   "license": "MIT",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/donaldturinglee/base-ui-icons/issues"
+    "url": "https://github.com/gamecrafters-io/base-ui-icons/issues"
   },
-  "homepage": "https://github.com/donaldturinglee/base-ui-icons#readme",
+  "homepage": "https://github.com/gamecrafters-io/base-ui-icons#readme",
   "peerDependencies": {
     "react": ">=18"
   },

@@ -4,7 +4,7 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/donaldturinglee/base-ui-icons">
+  <a href="https://github.com/gamecrafters-io/base-ui-icons">
     <img src="public/logo.svg" alt="Logo" width="80" height="80">
   </a>
 
@@ -87,8 +87,8 @@ Don't forget to give the project a star! Thanks again!
 
 ### Top contributors:
 
-<a href="https://github.com/donaldturinglee/base-ui-icons/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=donaldturinglee/base-ui-icons" alt="contrib.rocks image" />
+<a href="https://github.com/gamecrafters-io/base-ui-icons/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=gamecrafters-io/base-ui-icons" alt="contrib.rocks image" />
 </a>
 
 
@@ -114,12 +114,12 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 [npm-shield]: https://img.shields.io/npm/v/@gamecrafters/base-ui-icons.svg?style=for-the-badge
 [npm-url]: https://www.npmjs.com/package/@gamecrafters/base-ui-icons
-[contributors-shield]: https://img.shields.io/github/contributors/donaldturinglee/base-ui-icons.svg?style=for-the-badge
-[contributors-url]: https://github.com/donaldturinglee/base-ui-icons/graphs/contributors
-[last-commit-shield]: https://img.shields.io/github/last-commit/donaldturinglee/base-ui-icons.svg?style=for-the-badge
-[last-commit-url]: https://github.com/donaldturinglee/base-ui-icons/commits/main
-[license-shield]: https://img.shields.io/github/license/donaldturinglee/base-ui-icons.svg?style=for-the-badge
-[license-url]: https://github.com/donaldturinglee/base-ui-icons/blob/main/LICENSE
+[contributors-shield]: https://img.shields.io/github/contributors/gamecrafters-io/base-ui-icons.svg?style=for-the-badge
+[contributors-url]: https://github.com/gamecrafters-io/base-ui-icons/graphs/contributors
+[last-commit-shield]: https://img.shields.io/github/last-commit/gamecrafters-io/base-ui-icons.svg?style=for-the-badge
+[last-commit-url]: https://github.com/gamecrafters-io/base-ui-icons/commits/main
+[license-shield]: https://img.shields.io/github/license/gamecrafters-io/base-ui-icons.svg?style=for-the-badge
+[license-url]: https://github.com/gamecrafters-io/base-ui-icons/blob/main/LICENSE
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://react.dev/
 [TypeScript]: https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white
